@@ -1,2 +1,2 @@
-gptscripts:
-  folder: gptscripts
+gptscript:
+  files: scripts/*.gpt
