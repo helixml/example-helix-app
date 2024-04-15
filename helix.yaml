@@ -1,2 +1,3 @@
 gptscript:
-  files: scripts/*.gpt
+  files:
+    - scripts/*.gpt
