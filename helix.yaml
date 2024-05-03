@@ -1,3 +1,14 @@
-gptscript:
-  files:
-    - scripts/*.gpt
+name: My Test Helix App
+description: This is a test Helix app
+assistants:
+- name: My Example GPT Script
+  description: This is an example gpt script config
+  gptscripts:
+    - file: scripts/*.gpt
+- name: My Example API
+  description: This is an example api to ask for fruit prices
+  apis:
+    - name: Demo Hiring Pipeline API
+      description: List all job vacancies, optionally filter by job title and/or candidate name
+      url: http://localhost:8085
+      schema: ./openapi/jobvacancies.yaml
