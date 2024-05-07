@@ -1,2 +1,12 @@
-gptscripts:
-  folder: gptscripts
+name: My Test Helix App
+description: This is a test Helix app
+assistants:
+- name: My Example Assistant
+  description: This is an example assistant with both apis and gptscripts
+  gptscripts:
+    - file: scripts/*.gpt
+  apis:
+    - name: Demo Hiring Pipeline API
+      description: List all job vacancies, optionally filter by job title and/or candidate name
+      url: http://demos:8085
+      schema: ./openapi/jobvacancies.yaml
