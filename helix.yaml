@@ -8,5 +8,5 @@ assistants:
   apis:
     - name: Demo Hiring Pipeline API
       description: List all job vacancies, optionally filter by job title and/or candidate name
-      url: http://localhost:8085
+      url: http://demos:8085
       schema: ./openapi/jobvacancies.yaml
