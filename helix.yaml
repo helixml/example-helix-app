@@ -1,12 +1,10 @@
 name: My Test Helix App
 description: This is a test Helix app
 assistants:
-- name: My Example GPT Script
-  description: This is an example gpt script config
+- name: My Example Assistant
+  description: This is an example assistant with both apis and gptscripts
   gptscripts:
     - file: scripts/*.gpt
-- name: My Example API
-  description: This is an example api to ask for fruit prices
   apis:
     - name: Demo Hiring Pipeline API
       description: List all job vacancies, optionally filter by job title and/or candidate name
