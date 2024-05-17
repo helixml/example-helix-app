@@ -1,8 +1,10 @@
-api_tests:
+api_url: https://demos.tryhelix.ai # maybe in future we can support also starting an API locally for testing
+tests:
   - id: basic_vacancy_test
     description: Test the model's ability to query the test vacancy API with the given OpenAPI spec.
     prompt: What job is Marcus applying for?
-    api_url: https://demos.tryhelix.ai # maybe in future we can support also starting an API locally for testing
     assert_api_call: /jobvacancies/v1/list?candidate_name=Marcus
     # see https://github.com/helixml/helix/blob/main/demos/jobvacancy.go
-    assert_response_contains: "Human Resources Manager"
+    assert_response:
+    - contains: "human resources"
+    - contains: "Marcus"
