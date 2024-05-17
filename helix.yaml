@@ -10,3 +10,5 @@ assistants:
       description: List all job vacancies, optionally filter by job title and/or candidate name
       url: https://demos.tryhelix.ai
       schema: ./openapi/jobvacancies.yaml
+  test_suites:
+    - ./tests/vacancy_tests.yaml
