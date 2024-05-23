@@ -1,4 +1,4 @@
-api_url: https://demos.tryhelix.ai # maybe in future we can support also starting an API locally for testing
+api_url: https://demos.tryhelix.ai # if you want to override the URL set in the helix.yaml, set it here (optional)
 tests:
   - id: basic_vacancy_test
     description: Test the model's ability to query the test vacancy API with the given OpenAPI spec.
