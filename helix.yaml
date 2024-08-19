@@ -1,14 +1,12 @@
-name: My Test Helix App
-description: This is a test Helix app
+name: Hiring info app
+description: Ask me questions about the hiring pipeline, or candidates such as Marcus
+avatar: |
+  https://cdn-icons-png.flaticon.com/512/10436/10436004.png
+image: https://www.shutterstock.com/image-photo/theyll-jump-chance-help-you-260nw-2224208345.jpg
 assistants:
-- name: My Example Assistant
-  description: This is an example assistant with both apis and gptscripts
-  gptscripts:
-    - file: scripts/*.gpt
+- model: meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo
   apis:
     - name: Demo Hiring Pipeline API
       description: List all job vacancies, optionally filter by job title and/or candidate name
       url: https://demos.tryhelix.ai
       schema: ./openapi/jobvacancies.yaml
-  test_suites:
-    - ./tests/vacancy_tests.yaml
