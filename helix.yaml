@@ -1,12 +1,10 @@
-name: Hiring info app
-description: Ask me questions about the hiring pipeline, or candidates such as Marcus
+name: Job vacancies and applicants
+description: Ask me questions about job vacancies, or candidates such as Alice, Marcus and Sophia
 avatar: |
   https://cdn-icons-png.flaticon.com/512/10436/10436004.png
 image: https://www.shutterstock.com/image-photo/theyll-jump-chance-help-you-260nw-2224208345.jpg
 assistants:
-- model: llama3:instruct
-  # If using together.ai:
-  #model: meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo
+- model: llama3:instruct # or meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo (for together.ai)
   apis:
     - name: Demo Hiring Pipeline API
       description: List all job vacancies, optionally filter by job title and/or candidate name
